@@ -1,0 +1,1 @@
+﻿Get-DnsServerZone -ComputerName site1-dc06 | ? {!$_.IsDsIntegrated -and $_.ZoneType -eq 'Forwarder'}

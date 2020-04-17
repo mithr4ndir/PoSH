@@ -1,0 +1,1 @@
+﻿gc '\\site1-olc01\c$\programdata\OneLogin, Inc\logs\adc.log' -last 100 | Select-String "in the queue" | ConvertTo-Html | Out-file C:\Shared\OneLoginQueue.htm
